@@ -27,7 +27,7 @@
 
 			<h1 class="success-title">Order Confirmed!</h1>
 			<p class="success-desc">
-				Thank you for your purchase, Mark Silverbridge's plumbing guide is now ready for download. We've also sent a receipt and download copy to <strong>{customerEmail}</strong>.
+				Thank you for your purchase. The UI Design Playbook is now ready for download. We've also sent a receipt and download copy to <strong>{customerEmail}</strong>.
 			</p>
 			
 			<div class="invoice-details">
@@ -55,12 +55,12 @@
 				<!-- Main Book -->
 				<div class="download-item-card">
 					<div class="download-img">
-						<img src="/images/ebook-cover.png" alt="Main Ebook Cover" />
+						<img src="/images/ebook-cover.png?v=ui-playbook" alt="Main Ebook Cover" />
 					</div>
 					<div class="download-info">
-						<h3>50 Easy Plumbing Fixes That Will Save You $10,000</h3>
-						<p class="file-size">PDF Ebook • 122 Pages • 18.4 MB</p>
-						<a href="#download-main" class="btn-primary dl-btn" onclick={(e) => { e.preventDefault(); alert('Simulated PDF Download triggered for Main Guide!'); }}>
+						<h3>The UI Design Playbook: 50 Rules to Designing Premium Interfaces</h3>
+						<p class="file-size">PDF Ebook • 122 Pages • 12.8 MB</p>
+						<a href="#download-main" class="btn-primary dl-btn" onclick={(e) => { e.preventDefault(); alert('Simulated PDF Download triggered for The UI Design Playbook!'); }}>
 							📥 Download Ebook PDF
 						</a>
 					</div>
@@ -70,13 +70,13 @@
 				{#if hasUpsell}
 					<div class="download-item-card">
 						<div class="download-img">
-							<img src="/images/companion-cover.png" alt="Companion Cover" />
+							<img src="/images/companion-cover.png?v=figma-workbook" alt="Companion Cover" />
 						</div>
 						<div class="download-info">
-							<h3>The Essential Home Plumbing Tools Checklist</h3>
-							<p class="file-size">PDF Workbook • 18 Pages • 4.2 MB</p>
-							<a href="#download-companion" class="btn-primary dl-btn warning-dl" onclick={(e) => { e.preventDefault(); alert('Simulated PDF Download triggered for Tools Checklist!'); }}>
-								📥 Download Checklist PDF
+							<h3>The Auto-Layout & Figma Mastery Workbook</h3>
+							<p class="file-size">Figma Asset Package • 24 MB</p>
+							<a href="#download-companion" class="btn-primary dl-btn warning-dl" onclick={(e) => { e.preventDefault(); alert('Simulated FIG files package download triggered!'); }}>
+								📥 Download Figma Package
 							</a>
 						</div>
 					</div>
@@ -96,7 +96,7 @@
 
 <footer>
 	<div class="container">
-		<p>&copy; {new Date().getFullYear()} Mark Silverbridge. All rights reserved.</p>
+		<p>&copy; {new Date().getFullYear()} Aether Design. All rights reserved.</p>
 	</div>
 </footer>
 
@@ -126,9 +126,9 @@
 		width: 4.5rem;
 		height: 4.5rem;
 		border-radius: 50%;
-		background-color: rgba(251, 191, 36, 0.1);
+		background-color: rgba(16, 185, 129, 0.1);
 		color: var(--color-yellow);
-		border: 2px solid rgba(251, 191, 36, 0.3);
+		border: 2px solid rgba(16, 185, 129, 0.3);
 		display: flex;
 		align-items: center;
 		justify-content: center;

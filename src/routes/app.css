@@ -1,16 +1,16 @@
 /* Base Theme Variables */
 :root {
-	--color-bg-dark: #0b0f19;
-	--color-bg-card: #131b2e;
-	--color-bg-card-hover: #1b2642;
+	--color-bg-dark: #070a13;
+	--color-bg-card: #0f172a;
+	--color-bg-card-hover: #1e293b;
 	--color-text-primary: #f8fafc;
 	--color-text-secondary: #94a3b8;
 	--color-text-dark: #0f172a;
-	--color-yellow: #fbbf24;
-	--color-yellow-hover: #f59e0b;
-	--color-yellow-light: #fef3c7;
+	--color-yellow: #10b981;
+	--color-yellow-hover: #059669;
+	--color-yellow-light: #ecfdf5;
 	--color-border: rgba(255, 255, 255, 0.08);
-	--color-border-focus: rgba(251, 191, 36, 0.4);
+	--color-border-focus: rgba(16, 185, 129, 0.4);
 	--font-title: 'Outfit', sans-serif;
 	--font-body: 'Inter', sans-serif;
 	--max-width: 1100px;
@@ -67,8 +67,7 @@ a {
 .header-nav {
 	border-bottom: 1px solid var(--color-border);
 	padding: 1.2rem 0;
-	background-color: rgba(11, 15, 25, 0.8);
-	backdrop-filter: blur(10px);
+	background-color: var(--color-bg-dark);
 	position: sticky;
 	top: 0;
 	z-index: 10;
@@ -97,9 +96,9 @@ a {
 }
 
 .nav-cta {
-	background-color: rgba(251, 191, 36, 0.1);
+	background-color: rgba(16, 185, 129, 0.1);
 	color: var(--color-yellow);
-	border: 1px solid rgba(251, 191, 36, 0.3);
+	border: 1px solid rgba(16, 185, 129, 0.3);
 	padding: 0.5rem 1rem;
 	border-radius: 9999px;
 	font-family: var(--font-title);
@@ -111,7 +110,7 @@ a {
 .nav-cta:hover {
 	background-color: var(--color-yellow);
 	color: var(--color-text-dark);
-	box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+	box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
 }
 
 /* Buttons */
@@ -129,7 +128,7 @@ a {
 	border-radius: 8px;
 	cursor: pointer;
 	transition: all var(--transition-speed) ease;
-	box-shadow: 0 4px 14px rgba(251, 191, 36, 0.4);
+	box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
 	width: 100%;
 	text-align: center;
 }
@@ -137,7 +136,7 @@ a {
 .btn-primary:hover {
 	background-color: var(--color-yellow-hover);
 	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(251, 191, 36, 0.6);
+	box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
 }
 
 .btn-primary:active {
@@ -171,7 +170,7 @@ a {
 /* Badge */
 .badge {
 	display: inline-block;
-	background-color: rgba(251, 191, 36, 0.1);
+	background-color: rgba(16, 185, 129, 0.1);
 	color: var(--color-yellow);
 	font-family: var(--font-title);
 	font-size: 0.75rem;
@@ -180,7 +179,7 @@ a {
 	letter-spacing: 0.1em;
 	padding: 0.3rem 0.8rem;
 	border-radius: 9999px;
-	border: 1px solid rgba(251, 191, 36, 0.2);
+	border: 1px solid rgba(16, 185, 129, 0.2);
 	margin-bottom: 1.5rem;
 }
 

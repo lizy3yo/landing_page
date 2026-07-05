@@ -11,8 +11,8 @@
 </script>
 
 <svelte:head>
-	<title>Special Offer - Companion Workbook</title>
-	<meta name="description" content="Add the Essential Home Plumbing Tools Checklist to your order for a special launch price." />
+	<title>Special Offer - Figma Mastery Workbook</title>
+	<meta name="description" content="Add the Figma Auto-Layout & Mastery Workbook to your order for a special launch price." />
 </svelte:head>
 
 <!-- Promo Sale Banner -->
@@ -22,12 +22,30 @@
 
 <main class="upsell-container">
 	<div class="container text-center max-content">
+		<div class="back-link-wrapper">
+			<a href="/" class="back-link" aria-label="Back">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="2.5"
+					stroke="currentColor"
+					class="back-icon"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+					/>
+				</svg>
+			</a>
+		</div>
 		
 		<div class="upsell-header">
 			<span class="badge warning-badge">LIMITED TIME UPGRADE</span>
 			<h1 class="upsell-title">Wait! Don't Checkout Yet...</h1>
 			<p class="upsell-subtitle">
-				Complete your toolbox and make repairs even easier. Add our companion workbook <strong>"The Essential Home Plumbing Tools Checklist"</strong> to your order for only <span class="highlight-yellow">$9</span> (regularly $19.00).
+				Complete your design stack and speed up your workflow. Add our companion workbook <strong>"The Auto-Layout & Figma Mastery Workbook"</strong> to your order for only <span class="highlight-yellow">$9</span> (regularly $19.00).
 			</p>
 		</div>
 
@@ -38,7 +56,7 @@
 					<div class="book">
 						<div class="book-spine"></div>
 						<div class="book-cover">
-							<img src="/images/companion-cover.png" alt="The Essential Home Plumbing Tools Checklist Companion Workbook Cover" />
+							<img src="/images/companion-cover.png?v=figma-workbook" alt="The Auto-Layout & Figma Mastery Workbook Cover" />
 						</div>
 					</div>
 				</div>
@@ -47,27 +65,27 @@
 
 			<!-- Value list -->
 			<div class="upsell-features">
-				<h3>What's Inside the Tools Checklist:</h3>
+				<h3>What's Inside the Figma Mastery Workbook:</h3>
 				<ul class="features-list">
 					<li>
 						<span class="icon">✅</span>
 						<div>
-							<strong>The Exact Toolbox Blueprint:</strong>
-							<p>A categorized checklist of the 12 essential tools every homeowner needs. Don't buy expensive plumbing sets you will never use.</p>
+							<strong>Figma Component Blueprints:</strong>
+							<p>A collection of 25+ essential responsive components (buttons, input fields, navigation cards) designed with strict auto-layout rules.</p>
 						</div>
 					</li>
 					<li>
 						<span class="icon">✅</span>
 						<div>
-							<strong>Sizing & Compatibility Guide:</strong>
-							<p>A handy cheat-sheet for pipes and thread sizes. Walk into any hardware store and get the exact matching joints or washers on the first try.</p>
+							<strong>Auto-Layout Guides & Scaling:</strong>
+							<p>Interactive exercises to master nested frames, resizing options (hug vs fill), and min/max dimensions so your design adapts to any screen.</p>
 						</div>
 					</li>
 					<li>
 						<span class="icon">✅</span>
 						<div>
-							<strong>Emergency Shut-off Checklist:</strong>
-							<p>A printable sheet detailing where shut-off valves are located in typical home configurations and how to isolate leaks instantly.</p>
+							<strong>Spacing Scale Reference Sheet:</strong>
+							<p>A cheat-sheet grid mapping pixel layouts to Figma variables to construct modern typography, margins, and borders in seconds.</p>
 						</div>
 					</li>
 				</ul>
@@ -104,20 +122,20 @@
 
 <footer>
 	<div class="container">
-		<p>&copy; {new Date().getFullYear()} Mark Silverbridge. All rights reserved.</p>
+		<p>&copy; {new Date().getFullYear()} Blueprint Media. All rights reserved.</p>
 	</div>
 </footer>
 
 <style>
 	.warning-bar {
-		background-color: #f59e0b;
-		color: #000;
+		background-color: var(--color-yellow);
+		color: #ffffff;
 	}
 
 	.warning-badge {
-		background-color: rgba(245, 158, 11, 0.1);
-		color: #f59e0b;
-		border-color: rgba(245, 158, 11, 0.2);
+		background-color: var(--color-yellow-light);
+		color: var(--color-yellow);
+		border-color: rgba(16, 185, 129, 0.2);
 	}
 
 	.max-content {
@@ -302,5 +320,29 @@
 	.upsell-guarantee {
 		font-size: 0.85rem;
 		color: var(--color-text-secondary);
+	}
+
+	.back-link-wrapper {
+		text-align: left;
+		width: 100%;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+	}
+
+	.back-link {
+		display: inline-flex;
+		align-items: center;
+		color: #94a3b8;
+		transition: color 0.15s;
+		text-decoration: none;
+	}
+
+	.back-link:hover {
+		color: var(--color-yellow);
+	}
+
+	.back-icon {
+		width: 1.3rem;
+		height: 1.3rem;
 	}
 </style>
